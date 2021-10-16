@@ -1,0 +1,116 @@
+<!doctype html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>BBID</title>
+		<meta name="description" content="BBID" />
+		<link rel="stylesheet" type="text/css" href="bbid.css"/>
+		<script src="jquery-3.6.0.min.js"></script> 
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("header.html"); 
+			});
+			$(function(){
+				$("#footer").load("footer.html"); 
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header"></div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="border_">
+				<div>Standart 1</div>
+				<a href="download.php?id=1" class="button_medium">Download</a>
+				<div class="popup" onclick="function1()">
+					<input  type="image" src="img/information.jpg" alt="Information" width="20%" height="80%">
+					<span class="popuptext" id="popup1">
+						<img src="img/information.jpg" alt="Information" width="20%" height="80%" style="float:left;margin:0 5% 0 5%;">
+						<a href="#popup1" style="float:right;margin:5% 5% 5% 5%;color:#FFF;text-decoration:none;">X</a>
+						<br/>
+						<br/>
+						<div id="border">
+							Standart 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						</div>
+					</span>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div id="border_">
+				<div>Standart 2</div>
+				<a href="download.php?id=2" class="button_medium">Download</a>
+				<div class="popup" onclick="function2()">
+					<input  type="image" src="img/information.jpg" alt="Information" width="20%" height="80%">
+					<span class="popuptext" id="popup2">
+						<img src="img/information.jpg" alt="Information" width="20%" height="80%" style="float:left;margin:0 5% 0 5%;">
+						<a href="#popup2" style="float:right;margin:5% 5% 5% 5%;color:#FFF;text-decoration:none;">X</a>
+						<br/>
+						<br/>
+						<div id="border">
+							Standart 2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						</div>
+					</span>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div id="border_">
+				<div>Standart 3</div>
+				<a href="download.php?id=3" class="button_medium">Download</a>
+				<div class="popup" onclick="function3()">
+					<input  type="image" src="img/information.jpg" alt="Information" width="20%" height="80%">
+					<span class="popuptext" id="popup3">
+						<img src="img/information.jpg" alt="Information" width="20%" height="80%" style="float:left;margin:0 5% 0 5%;">
+						<a href="#popup3" style="float:right;margin:5% 5% 5% 5%;color:#FFF;text-decoration:none;">X</a>
+						<br/>
+						<br/>
+						<div id="border">
+							Standart 3 : Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						</div>
+					</span>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="button">
+				<a href="request.html" class="button_medium">I want to create my own set<br/>of BBID custom images</a>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="footer"></div>
+		</div>
+		<script type="text/javascript">
+			function function1() {
+			  var popup = document.getElementById("popup1");
+			  popup.classList.toggle("show");
+			  if(popup.classList.contains("show"))
+				 setTimeout(() => popup.classList.remove("show"), 5000)
+			}
+			function function2() {
+			  var popup = document.getElementById("popup2");
+			  popup.classList.toggle("show");
+			  if(popup.classList.contains("show"))
+				 setTimeout(() => popup.classList.remove("show"), 5000)
+			}
+			function function3() {
+			  var popup = document.getElementById("popup3");
+			  popup.classList.toggle("show");
+			  if(popup.classList.contains("show"))
+				 setTimeout(() => popup.classList.remove("show"), 5000)
+			}
+		</script>
+    </body>
+</html>

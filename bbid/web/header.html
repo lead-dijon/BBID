@@ -1,0 +1,30 @@
+<div id="banner">
+	<a class="ubfc" href="http://www.ubfc.fr/" target="_blank"><img src="img/ubfc.png"alt="UBFC"></a>
+	<a class="ub" href="http://en.u-bourgogne.fr/" target="_blank"><img src="img/ub.png"alt="uB"></a>
+	<a class="lead" href="http://leadserv.u-bourgogne.fr/en/" target="_blank"><img src="img/lead.png"alt="LEAD"></a>
+	<a class="cnrs" href="http://www.cnrs.fr/index.php" target="_blank"><img src="img/cnrs.png"alt="CNRS"></a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="menu">
+	<ul>
+		<li><a href="index.html">BBID</a></li>
+		<li><a href="info.html">More info</a></li>
+		<li><a href="download.html">Downloads</a></li>
+		<li><a href="examples.html">Examples</a></li>
+		<li style="float:right"><a href="contacts_disclaimer.html">Contacts</a></li>
+	</ul>
+	<script>
+		$(document).ready(function () {
+			$("#menu ul li a").removeClass("active");
+			const $links = $("#menu ul li a");
+			$.each($links, function (index, link) {
+				if (link.href == document.URL) {
+					$(this).addClass('active');
+				}
+			});
+		});
+	</script>
+</div>

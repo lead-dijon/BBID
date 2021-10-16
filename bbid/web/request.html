@@ -1,0 +1,217 @@
+<!doctype html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>BBID</title>
+		<meta name="description" content="BBID" />
+		<link rel="stylesheet" type="text/css" href="bbid.css"/>
+		<script src="jquery-3.6.0.min.js"></script> 
+		<script type="text/javascript">
+			const stateObj = { request: "index" };
+			history.replaceState(stateObj, "", "index.html");$(function(){
+				$("#header").load("header.html"); 
+			});
+			$(function(){
+				$("#footer").load("footer.html"); 
+			});
+			function validate(address) {
+				if(document.form.address1.value != document.form.address2.value) { 
+					alert("Adresses differ");
+					document.form.address1.focus();
+					return(false);
+				}
+			};
+		</script> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="header"></div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="border">
+				<h2>Explanations</h2>
+				<br/>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="border">
+				<h2>Setting interface</h2>
+				<form name="form" method="get" action="https://i3m-lead-0243.u-bourgogne.fr/bbid_wsgi">
+					<table style="margin: auto auto;border-spacing:30px">
+						<tr>
+							<td class="left">Width</td>
+							<td class="right">
+								<input type="number" name="width" value="140">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Height</td>
+							<td class="right">
+								<input type="number" name="height" value="140">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Luminances</td>
+							<td class="right">
+								<input type="number" name="luminance1" value="128">
+							</td>
+							<td class="right">
+								<input type="number" name="luminance2" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="luminance3" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Sizes</td>
+							<td class="right">
+								<input type="number" name="size1" value="4">
+							</td>
+							<td class="right">
+								<input type="number" name="size2" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="size3" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">...</td>
+							<td class="right">
+								<input type="number" name="size4" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="size5" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="size6" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Angles</td>
+							<td class="right">
+								<input type="number" name="angle1" value="0">
+							</td>
+							<td class="right">
+								<input type="number" name="angle2" value="90">
+							</td>
+							<td class="right">
+								<input type="number" name="angle3" value="10">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Textures</td>
+							<td class="right">
+								<select name="texture1">
+									<option selected value="texture1-Texture_1.png">Texture 1</option>
+									<option          value="texture1-Texture_2.png">Texture 2</option>
+									<option          value="texture1-Texture_3.png">Texture 3</option>
+								</select>
+							</td>
+							<td class="right">
+								<select name="texture2">
+									<option selected value=""></option>
+									<option value="texture2-Texture_1.png">Texture 1</option>
+									<option value="texture2-Texture_2.png">Texture 2</option>
+									<option value="texture2-Texture_3.png">Texture 3</option>
+								</select>
+							</td>
+							<td class="right">
+								<select name="texture3">
+									<option selected value=""></option>
+									<option value="texture3-Texture_1.png">Texture 1</option>
+									<option value="texture3-Texture_2.png">Texture 2</option>
+									<option value="texture3-Texture_3.png">Texture 3</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Side</td>
+							<td class="right">
+								<input type="number" name="side11" value="10">
+							</td>
+							<td class="right">
+								<input type="number" name="side12" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="side13" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left"></td>
+							<td class="right">
+								<input type="number" name="side21" value="4">
+							</td>
+							<td class="right">
+								<input type="number" name="side22" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="side23" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Shade</td>
+							<td class="right">
+								<input type="number" name="shade11" value="1">
+							</td>
+							<td class="right">
+								<input type="number" name="shade12" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="shade13" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left"></td>
+							<td class="right">
+								<input type="number" name="shade21" value="64">
+							</td>
+							<td class="right">
+								<input type="number" name="shade22" value="">
+							</td>
+							<td class="right">
+								<input type="number" name="shade23" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Items</td>
+							<td class="right">
+								<input type="number" name="items" value="1000">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Bar</td>
+							<td class="right">
+								<input type="number" name="width" value="100">
+							</td>
+						</tr>
+						<tr>
+							<td class="left">Email for notification<br/>(optional)</td>
+							<td class="right">
+								<input type="email" name="address1" placeholder="example@mail.com" value="" >
+							</td>
+							<td class="left">Re-enter email</td>
+							<td class="right">
+								<input type="email" name="address2" placeholder="example@mail.com" value="" >
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<button type="submit" name="button" class="button_generate" onclick="return validate()">Generate</button>
+					<br/>
+					<br/>
+				</form>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="footer"></div>
+		</div>
+    </body>
+</html>

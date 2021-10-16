@@ -1,0 +1,75 @@
+<!doctype html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="Black Bar Image Dataset, BBID, computational model assessment, image classification, texture classification, recognition">
+		<meta name="description" content="BBID" />
+		<meta http-equiv="Refresh" content="10">
+		<title>BBID</title>
+		<link rel="stylesheet" type="text/css" href="bbid.css"/>
+		<script src="jquery-3.6.0.min.js"></script> 
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("header.html"); 
+			});
+			$(function(){
+				$("#footer").load("footer.html"); 
+			});			
+			 history.pushState(null, null, location.href);
+			 window.addEventListener('popstate', function() {
+				window.location.replace("index.html");
+			});
+		</script> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="header"></div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="border">
+				<br/>
+				<br/>
+				<h2>Download results</h2>
+				<br/>
+				<br/>
+				<?php
+					$identifier = $_GET['id'];
+					$files = preg_grep('~\.(zip)$~', scandir("../wk/", SCANDIR_SORT_DESCENDING));
+					if(isset($identifier))
+					{
+						$file_ = False;
+						foreach($files as $file)
+						{
+							if(strcmp($file, $identifier . ".zip") == 0)
+							{
+								$file_ = True;
+							}
+						}
+						if($file_ == False)
+						{
+							echo "You request number is <b>#$identifier</b><br/><br/>Please wait until ZIP file is available below<br/><br/>";
+						}
+					}
+					foreach( $files as $file)
+					{
+						$file_ = str_replace("zip", "txt", "../wk/" . $file);
+						$duration = fread(fopen($file_, "r"), filesize($file_));
+						echo "<a href=../wk/$file>$file</a> completed in $duration s<br/><br/>";
+					}
+				?>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="footer"></div>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,382 @@
+body {
+	background: #fff;
+    font-size: 13px;
+	font-family: arial;
+	color: #7a7a7a;
+}
+
+#container {
+	position: absolute;
+    width: 100%;
+    margin: auto auto;
+}
+
+#banner {
+    position: relative;
+    width: 80%;
+    height: 120px;
+	margin: auto auto;
+    background: transparent url(img/banner.jpg) repeat-x top left;
+	display: flex;
+    justify-content: space-between;
+}
+
+#banner a {
+    margin: 0 5%;
+}
+
+#banner a.ubfc {
+	position: relative;
+    top: 7%;
+}
+#banner a.ub {
+    position: relative;
+    top: 12%;
+}
+
+#banner a.lead {
+    position: relative;
+    top: 24%;
+}
+
+#banner a.cnrs {
+    position: relative;
+    top: 8%;
+}
+
+#menu ul {
+	position: relative;
+    width: 80%;
+	margin: auto auto;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #999;
+	font-size: 20px;
+}
+
+#menu li {
+  float: left;
+}
+
+#menu li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#menu li a: hover {
+	background-color: #111;
+}
+
+.active {
+	background-color: #555;
+}
+
+#container .title {
+	position: relative;
+    width: 80%;
+    margin: auto auto;
+	text-align: center;
+	font-size: 40px;
+}
+
+#border {
+	position: relative;
+	width: 70%;
+	height: 30%;
+	border: 2px solid #999;
+	margin: auto auto;
+	padding: 1% 1% 1% 1%;
+	text-align: center;
+	font-size: 20px;
+}
+
+#border_ {
+	position: relative;
+	width: 70%;
+	height: 30%;
+	border: 2px solid #999;
+	margin: auto auto;
+	padding: 1% 1% 1% 1%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	font-size: 20px;
+}
+
+.img { 
+	display: inline-block;
+	position: absolute;
+	top: -20%;
+	right: -5%;
+}
+
+.img_ { 
+	display: inline-block;
+	position: absolute;
+	top: 19%;
+	right: 9%;
+	z-index: 101;
+}
+
+.img1 { 
+	display: inline-block;
+	position: absolute;
+	top: 25%;
+	right: -10%;
+	z-index: 101;
+}
+
+.img2 { 
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: -10%;
+	z-index: 101;
+}
+
+.img3 { 
+	display: inline-block;
+	position: absolute;
+	top: 80%;
+	right: -5%;
+	z-index: 101;
+}
+
+.button_big {
+	width: 20%;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#AAA;
+	border-radius:15px;
+	border:1px solid #999;
+	display:inline-block;
+	cursor:pointer;
+	color:#111;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.button_big:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+.button_big:active {
+	position:relative;
+	top:1px;
+}
+
+.button_big img {
+	position: relative;
+	float: right;
+	vertical-align:middle
+}
+
+.button_medium {
+	position: relative;
+	float: right;
+	width: 20%;
+	margin-right: 5%;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#AAA;
+	border-radius:15px;
+	border:1px solid #999;
+	display:inline-block;
+	cursor:pointer;
+	color:#111;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.button_medium:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.button_medium:active {
+	position:relative;
+	top:1px;
+}
+
+.button_small {
+	position: relative;
+	float: right;
+	width: 5%;
+	margin-right: 5%;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#AAA;
+	border-radius:15px;
+	border:1px solid #999;
+	display:inline-block;
+	cursor:pointer;
+	color:#111;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.button_small:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.button_small:active {
+	position:relative;
+	top:1px;
+}
+
+.button_generate {
+	position: relative;
+	width: 20%;
+	margin-right: 5%;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#AAA;
+	border-radius:15px;
+	border:1px solid #999;
+	display:inline-block;
+	cursor:pointer;
+	color:#111;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.button_generate:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.button_generate:active {
+	position:relative;
+	top:1px;
+}
+
+.box {
+   display: flex;
+   align-items:center;
+}
+
+#button {
+	position: relative;
+    width: 90%;
+}
+
+#buttons {
+	position: relative;
+	left: 22%;
+    width: 60%;
+	align-items: center;
+}
+
+#buttons_ {
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer ul {
+	position: relative;
+    width: 40%;
+	margin: auto auto;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #999;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer li {
+  float: left;
+}
+
+#footer li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#footer li div {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#footer li a: hover {
+	background-color: #111;
+}
+
+ /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
